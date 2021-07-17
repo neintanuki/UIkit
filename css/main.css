@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+body {
+  background: #f5f5f5;
+  margin: 0;
+  padding: 4rem 0 0 0;
+  font-family: Poppins, sans-serif;
+}
+
+body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  background: white;
+  z-index: 100;
+}
+
+nav .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .burger-menu {
+  width: 2rem;
+  border: solid .18rem gray;
+  border-radius: .4rem;
+  padding: .2rem;
+  cursor: pointer;
+}
+
+nav .burger-menu span {
+  display: block;
+  height: .2rem;
+  width: 100%;
+  background: black;
+}
+
+nav .burger-menu span:not(:last-child) {
+  margin-bottom: .2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+header .container {
+  background: #E63946;
+  padding: .8rem 0;
+}
+
+header .container .header-content {
+  padding: 0 .8rem;
+}
+
+header .container .header-img {
+  width: 100%;
+  height: 16.25rem;
+  background: url("../assets/space-explorer.svg") no-repeat right center;
+  background-size: contain;
+}
+
+.pricing {
+  text-align: center;
+}
+
+.pricing .prices .price-card {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin-bottom: 2rem;
+}
+
+.pricing .prices .price-header {
+  padding: .6rem 0;
+  background: #A8DADC;
+}
+
+.pricing .prices .price {
+  font-size: 2rem;
+  display: block;
+}
+
+.pricing .prices a {
+  display: inline-block;
+  padding: .8rem 1rem;
+  margin-top: 1rem;
+  background: #FFBA08;
+}
+
+.pricing .prices .price-features {
+  text-align: left;
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+  list-style: none;
+}
+
+.pricing .prices .price-features li {
+  position: relative;
+}
+
+.pricing .prices .price-features li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.pricing .prices .price-features li::before {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background: url("../assets/check-solid.svg") no-repeat;
+  position: absolute;
+  left: -1.4rem;
+}
+
+.about .left-content {
+  text-align: center;
+  padding: 0 .8rem;
+}
+
+.about .right-content {
+  padding: .8rem;
+  background: #A8DADC;
+}
+
+.about .right-content h2 {
+  font-size: 1rem;
+}
+
+.about .right-content .offer-card {
+  max-width: 31.25rem;
+  background: white;
+  padding: .8rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem auto;
+}
+
+.about .right-content .offer-card img {
+  margin-right: 2rem;
+}
+
+.about .right-content .offer-card .text-content {
+  width: 70%;
+}
+
+footer {
+  padding: 2rem;
+  background: #A8DADC;
+}
+
+footer .logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+footer a {
+  display: block;
+  color: black;
+  margin-bottom: .8rem;
+}
+
+footer form label {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+footer form input, footer form button {
+  padding: .4rem;
+}
+
+footer form button {
+  border: black;
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.cta {
+  background: #E63946;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+.container {
+  max-width: 75rem;
+  margin: auto;
+  padding: 0 .8rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: .8rem 1rem;
+  background: #A8DADC;
+  color: black;
+  font-weight: 600;
+  border-radius: 5rem;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.logo span {
+  color: #FFBA08;
+}
+
+@media only screen and (max-width: 47.9rem) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #E63946;
+    text-align: center;
+  }
+  .nav-links a {
+    margin-bottom: 1rem;
+  }
+  .nav-links a:not(.btn-cta) {
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .nav-links .close-btn {
+    display: block;
+    margin: auto;
+  }
+  .nav-links .links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (min-width: 26.5625rem) {
+  header .container .header-img {
+    height: 50vw;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .burger-menu,
+  .close-btn {
+    display: none;
+  }
+  .nav-links {
+    display: block;
+  }
+  .nav-links a:not(.btn-cta) {
+    margin-right: 2rem;
+  }
+  .pricing .prices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .pricing .prices .price-card {
+    width: 28%;
+  }
+  footer .footer-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .footer-links > * {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  header {
+    margin-top: 2rem;
+  }
+  header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+  header .container .header-img {
+    height: 28rem;
+    background-size: contain;
+  }
+  header .container .header-content {
+    padding: 6rem 0 0 2rem;
+  }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .about .offers {
+    max-width: 37.5rem;
+    margin-right: auto;
+  }
+  .about .left-content .text-content {
+    max-width: 37.5rem;
+    margin-left: auto;
+    padding: 6rem 1rem 0 1rem;
+  }
+  .title {
+    font-size: 2.75rem;
+    margin: 0;
+  }
+  .subtitle {
+    font-size: 1.15rem;
+  }
+  .fade-up {
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+    opacity: 0;
+    -webkit-transition: opacity .6s ease-in, -webkit-transform .6s ease-in;
+    transition: opacity .6s ease-in, -webkit-transform .6s ease-in;
+    transition: transform .6s ease-in, opacity .6s ease-in;
+    transition: transform .6s ease-in, opacity .6s ease-in, -webkit-transform .6s ease-in;
+  }
+  .fade-up-show {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .cta {
+    padding: 4rem;
+  }
+  .cta a {
+    margin-top: 1rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
